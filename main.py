@@ -57,15 +57,15 @@ class Player:
         self.name = name
         self.score = 0
 
-    def add_score(self, points):
+    def bal_qoshish(self, points):
         self.score += points
 
-    def get_score(self):
+    def bal_olish(self):
         return self.score
 
     def __str__(self):
         return f"{self.name}: {self.score}"
-
+    
 class Game:
     def __init__(self, players):
         self.players = players
@@ -83,7 +83,7 @@ class Game:
 
                 if taxmin == number:
                     print("To'g'ri taxmin qildingiz!")
-                    player.add_score(10)
+                    player.bal_qoshish(10)
                 else:
                     print("Kechirasiz taxminingiz hato:)")
 
